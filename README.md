@@ -52,7 +52,7 @@ Por ser um site estático, basta abrir o arquivo `index.html` no navegador.
 
 **Opção 1 — abrir direto:** dê um duplo clique no `index.html`.
 
-**Opção 2 — servidor local (recomendado):**
+**Opção 2 — servidor local (o que eu recomendado):**
 
 ```bash
 # com Python 3
@@ -96,7 +96,7 @@ Biblioteca Digital UniFECAF/
 
 ## 👤 Autor
 
-**Erick** — projeto acadêmico desenvolvido para a disciplina de Designer Web / UniFECAF.
+**Erick Fábio** — projeto acadêmico desenvolvido para a disciplina de Designer Web / UniFECAF.
 
 ---
 
