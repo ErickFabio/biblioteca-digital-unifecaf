@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biblioteca Digital UniFECAF - acesse livros, materiais academicos e conteudos de apoio a aprendizagem de forma simples e intuitiva.">
+    <title>Biblioteca Digital UniFECAF</title>
+    <link rel="icon" type="image/svg+xml" href="assets/imagens/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fonte oficial do Design System UniFECAF (DM Sans) com fallback local -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Link de acessibilidade: pula para o conteudo principal -->
+    <a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
+
+    <!-- ===================== CABECALHO ===================== -->
+    <header class="cabecalho">
+        <div class="container cabecalho__conteudo">
+            <a class="logo" href="#inicio" aria-label="Biblioteca Digital UniFECAF - inicio">
+                <img src="assets/imagens/logo.svg" alt="" width="44" height="44">
+                <span class="logo__texto">
+                    <strong>Biblioteca Digital</strong>
+                    <small>UniFECAF</small>
+                </span>
+            </a>
+
+            <!-- Botao do menu hamburguer (mobile) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden>
+            <label for="menu-toggle" class="menu-hamburguer" aria-label="Abrir ou fechar o menu de navegacao">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="navegacao" aria-label="Navegacao principal">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#destaques">Destaques</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="#acervo">Acervo</a></li>
+                    <li><a href="#servicos">Servicos</a></li>
+                </ul>
+                <a class="btn btn--cta navegacao__cta" href="#acervo">Explorar livros</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+
+        <!-- ===================== HERO ===================== -->
+        <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+            <div class="container hero__conteudo">
+                <div class="hero__texto">
+                    <p class="hero__eyebrow">Biblioteca Digital UniFECAF</p>
+                    <h1 id="hero-titulo">Conhecimento que abre portas para o seu futuro</h1>
+                    <p class="hero__descricao">
+                        Acesse livros, materiais academicos e conteudos de apoio a aprendizagem
+                        de forma simples, rapida e intuitiva. Tudo o que voce precisa para
+                        estudar esta aqui.
+                    </p>
+                    <div class="hero__acoes">
+                        <a class="btn btn--cta" href="#acervo">Explorar o acervo</a>
+                        <a class="btn btn--contorno" href="#servicos">Conhecer servicos</a>
+                    </div>
+                </div>
+                <div class="hero__imagem">
+                    <img src="assets/imagens/hero-biblioteca.svg" alt="Ilustracao de uma pessoa lendo em uma biblioteca digital" width="520" height="420">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== DESTAQUES ===================== -->
+        <section class="secao secao--destaques" id="destaques" aria-labelledby="destaques-titulo">
+            <div class="container">
+                <header class="secao__cabecalho">
+                    <h2 id="destaques-titulo">Destaques da semana</h2>
+                    <p>Os titulos mais procurados pelos alunos neste periodo letivo.</p>
+                </header>
+
+                <div class="grade grade--destaques">
+                    <!-- Destaque principal -->
+                    <article class="destaque destaque--principal">
+                        <img src="assets/imagens/capa-tecnologia.svg" alt="Capa do livro Estruturas de Dados, de Ana Souza" width="300" height="420" loading="lazy">
+                        <div class="destaque__info">
+                            <span class="etiqueta etiqueta--novo">Mais emprestado</span>
+                            <h3>Estruturas de Dados e Algoritmos</h3>
+                            <p class="destaque__autor">Ana Souza</p>
+                            <p class="destaque__resumo">
+                                Um guia completo para entender listas, pilhas, filas, arvores e
+                                algoritmos de ordenacao com exemplos praticos em Python.
+                            </p>
+                            <a class="btn btn--cta" href="#acervo">Ver detalhes</a>
+                        </div>
+                    </article>
+
+                    <!-- Destaques secundarios -->
+                    <article class="destaque destaque--secundario">
+                        <img src="assets/imagens/capa-negocios.svg" alt="Capa do livro Gestao de Projetos, de Carlos Mendes" width="300" height="420" loading="lazy">
+                        <div class="destaque__info">
+                            <span class="etiqueta">Negocios</span>
+                            <h3>Gestao de Projetos Ageis</h3>
+                            <p class="destaque__autor">Carlos Mendes</p>
+                        </div>
+                    </article>
+
+                    <article class="destaque destaque--secundario">
+                        <img src="assets/imagens/capa-saude.svg" alt="Capa do livro Anatomia Humana, da Dra. Marina Lima" width="300" height="420" loading="lazy">
+                        <div class="destaque__info">
+                            <span class="etiqueta">Saude</span>
+                            <h3>Anatomia Humana Basica</h3>
+                            <p class="destaque__autor">Dra. Marina Lima</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CATEGORIAS ===================== -->
+        <section class="secao secao--categorias" id="categorias" aria-labelledby="categorias-titulo">
+            <div class="container">
+                <header class="secao__cabecalho">
+                    <h2 id="categorias-titulo">Explore por categoria</h2>
+                    <p>Encontre materiais organizados por area de conhecimento.</p>
+                </header>
+
+                <ul class="grade grade--categorias">
+                    <li>
+                        <a href="#acervo" class="categoria categoria--tecnologia">
+                            <span class="categoria__icone" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M3 4h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-7v2h3v2H7v-2h3v-2H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm1 2v10h16V6H4z"/></svg>
+                            </span>
+                            <span class="categoria__nome">Tecnologia</span>
+                            <span class="categoria__qtd">1.240 livros</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#acervo" class="categoria categoria--saude">
+                            <span class="categoria__icone" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 21s-8-4.9-8-11a5 5 0 0 1 8-3.6A5 5 0 0 1 20 10c0 6.1-8 11-8 11z"/></svg>
+                            </span>
+                            <span class="categoria__nome">Saude</span>
+                            <span class="categoria__qtd">860 livros</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#acervo" class="categoria categoria--negocios">
+                            <span class="categoria__icone" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M10 2h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4V4a2 2 0 0 1 2-2zm0 2v2h4V4h-4z"/></svg>
+                            </span>
+                            <span class="categoria__nome">Negocios</span>
+                            <span class="categoria__qtd">720 livros</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#acervo" class="categoria categoria--direito">
+                            <span class="categoria__icone" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 2l9 5v2l-9-5-9 5V7l9-5zM5 12h14l-1.5 6h-3l-.7-3h-2.6l-.7 3h-3L5 12z"/></svg>
+                            </span>
+                            <span class="categoria__nome">Direito</span>
+                            <span class="categoria__qtd">540 livros</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#acervo" class="categoria categoria--exatas">
+                            <span class="categoria__icone" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M11 2h2v6.2a6 6 0 0 1 4.9 5.3H22v2h-4.1a6 6 0 0 1-4.9 5.3V22h-2v-1.2A6 6 0 0 1 6.1 15.5H2v-2h4.1A6 6 0 0 1 11 8.2V2z"/></svg>
+                            </span>
+                            <span class="categoria__nome">Exatas</span>
+                            <span class="categoria__qtd">980 livros</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#acervo" class="categoria categoria--humanas">
+                            <span class="categoria__icone" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 2c1.2 0 2.6 1.9 3.2 5H8.8C9.4 5.9 10.8 4 12 4zM6.2 9H10c-.2 1.6-.2 3.2 0 4.8l-3.7.6A8 8 0 0 1 6.2 9zm11.6 0a8 8 0 0 1-.1 5.4L14 13.8c.2-1.6.2-3.2 0-4.8h3.8zM6.5 16.6l3.5-.5c.5 1.3 1.2 2.5 2 3.6a8 8 0 0 1-5.5-3.1zm5.5 3.4c-1-1-1.8-2.3-2.4-3.9h4.8c-.6 1.6-1.4 2.9-2.4 3.9zm4-.3c.8-1.1 1.5-2.3 2-3.6l3.5.5a8 8 0 0 1-5.5 3.1z"/></svg>
+                            </span>
+                            <span class="categoria__nome">Humanas</span>
+                            <span class="categoria__qtd">1.110 livros</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===================== ACERVO ===================== -->
+        <section class="secao secao--acervo" id="acervo" aria-labelledby="acervo-titulo">
+            <div class="container">
+                <header class="secao__cabecalho">
+                    <h2 id="acervo-titulo">Nosso acervo</h2>
+                    <p>Confira alguns dos livros disponiveis para consulta e emprestimo.</p>
+                </header>
+
+                <ul class="grade grade--livros">
+                    <li>
+                        <article class="livro">
+                            <div class="livro__capa">
+                                <img src="assets/imagens/capa-direito.svg" alt="Capa do livro Direito Civil, do Prof. Ricardo Alves" width="300" height="420" loading="lazy">
+                                <span class="livro__status livro__status--disponivel">Disponivel</span>
+                            </div>
+                            <div class="livro__info">
+                                <h3 class="livro__titulo">Direito Civil</h3>
+                                <p class="livro__autor">Prof. Ricardo Alves</p>
+                                <p class="livro__categoria">Direito</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="livro">
+                            <div class="livro__capa">
+                                <img src="assets/imagens/capa-exatas.svg" alt="Capa do livro Calculo Aplicado, de Beatriz Costa" width="300" height="420" loading="lazy">
+                                <span class="livro__status livro__status--disponivel">Disponivel</span>
+                            </div>
+                            <div class="livro__info">
+                                <h3 class="livro__titulo">Calculo Aplicado</h3>
+                                <p class="livro__autor">Beatriz Costa</p>
+                                <p class="livro__categoria">Exatas</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="livro">
+                            <div class="livro__capa">
+                                <img src="assets/imagens/capa-idiomas.svg" alt="Capa do livro English Grammar, de Peter Johnson" width="300" height="420" loading="lazy">
+                                <span class="livro__status livro__status--emprestado">Emprestado</span>
+                            </div>
+                            <div class="livro__info">
+                                <h3 class="livro__titulo">English Grammar</h3>
+                                <p class="livro__autor">Peter Johnson</p>
+                                <p class="livro__categoria">Idiomas</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="livro">
+                            <div class="livro__capa">
+                                <img src="assets/imagens/capa-engenharia.svg" alt="Capa do livro Engenharia Civil, de Lucas Martins" width="300" height="420" loading="lazy">
+                                <span class="livro__status livro__status--disponivel">Disponivel</span>
+                            </div>
+                            <div class="livro__info">
+                                <h3 class="livro__titulo">Engenharia Civil</h3>
+                                <p class="livro__autor">Lucas Martins</p>
+                                <p class="livro__categoria">Engenharia</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="livro">
+                            <div class="livro__capa">
+                                <img src="assets/imagens/capa-humanas.svg" alt="Capa do livro Historia do Brasil, de Joao Pereira" width="300" height="420" loading="lazy">
+                                <span class="livro__status livro__status--disponivel">Disponivel</span>
+                            </div>
+                            <div class="livro__info">
+                                <h3 class="livro__titulo">Historia do Brasil</h3>
+                                <p class="livro__autor">Joao Pereira</p>
+                                <p class="livro__categoria">Humanas</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="livro">
+                            <div class="livro__capa">
+                                <img src="assets/imagens/capa-tecnologia.svg" alt="Capa do livro Estruturas de Dados, de Ana Souza" width="300" height="420" loading="lazy">
+                                <span class="livro__status livro__status--disponivel">Disponivel</span>
+                            </div>
+                            <div class="livro__info">
+                                <h3 class="livro__titulo">Estruturas de Dados</h3>
+                                <p class="livro__autor">Ana Souza</p>
+                                <p class="livro__categoria">Tecnologia</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===================== SERVICOS ===================== -->
+        <section class="secao secao--servicos" id="servicos" aria-labelledby="servicos-titulo">
+            <div class="container">
+                <header class="secao__cabecalho">
+                    <h2 id="servicos-titulo">Servicos da biblioteca</h2>
+                    <p>Muito mais do que livros: apoiamos voce em toda a jornada academica.</p>
+                </header>
+
+                <ul class="grade grade--servicos">
+                    <li class="servico">
+                        <span class="servico__icone" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M4 4h7v16H4zM13 4h7v16h-7z" opacity=".25"/><path d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2v14h12V4H6z"/></svg>
+                        </span>
+                        <h3 class="servico__titulo">Emprestimo de livros</h3>
+                        <p>Retire livros fisicos com seu registro academico, de forma rapida e simples.</p>
+                    </li>
+                    <li class="servico">
+                        <span class="servico__icone" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 3a9 9 0 1 0 9 9h-2a7 7 0 1 1-7-7V3z"/><path d="M12 7v5l4 2 .9-1.8-3-1.5V7H12z"/></svg>
+                        </span>
+                        <h3 class="servico__titulo">Renovacao online</h3>
+                        <p>Renove seus emprestimos sem sair de casa, direto pela Biblioteca Virtual.</p>
+                    </li>
+                    <li class="servico">
+                        <span class="servico__icone" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M3 4h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-7v2h3v2H7v-2h3v-2H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm1 2v10h16V6H4z"/></svg>
+                        </span>
+                        <h3 class="servico__titulo">Acervo digital</h3>
+                        <p>Milhares de e-books e materiais de apoio disponiveis 24 horas por dia.</p>
+                    </li>
+                    <li class="servico">
+                        <span class="servico__icone" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2a5 5 0 0 1 5 5c0 3-2 4-2 7H9c0-3-2-4-2-7a5 5 0 0 1 5-5zm-3 14h6v2a3 3 0 0 1-6 0v-2z"/></svg>
+                        </span>
+                        <h3 class="servico__titulo">Apoio a pesquisa</h3>
+                        <p>Orientacao de bibliotecarios para trabalhos academicos e normas ABNT.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===================== CHAMADA FINAL ===================== -->
+        <section class="cta" aria-labelledby="cta-titulo">
+            <div class="container cta__conteudo">
+                <h2 id="cta-titulo">Pronto para comecar a estudar?</h2>
+                <p>Acesse a Biblioteca Virtual UniFECAF e explore milhares de titulos agora mesmo.</p>
+                <a class="btn btn--cta btn--grande" href="#acervo">Acessar o acervo</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== RODAPE ===================== -->
+    <footer class="rodape">
+        <div class="container rodape__conteudo">
+            <div class="rodape__marca">
+                <a class="logo logo--rodape" href="#inicio">
+                    <img src="assets/imagens/logo.svg" alt="" width="40" height="40">
+                    <span class="logo__texto">
+                        <strong>Biblioteca Digital</strong>
+                        <small>UniFECAF</small>
+                    </span>
+                </a>
+                <p>Conhecimento que abre portas para o seu futuro.</p>
+            </div>
+
+            <nav class="rodape__links" aria-label="Links do rodape">
+                <h2>Navegacao</h2>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#destaques">Destaques</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="#acervo">Acervo</a></li>
+                    <li><a href="#servicos">Servicos</a></li>
+                </ul>
+            </nav>
+
+            <div class="rodape__contato">
+                <h2>Contato</h2>
+                <address>
+                    Av. Vida Nova, 166 - Jardim Maria Rosa<br>
+                    Taboao da Serra - SP<br>
+                    <a href="tel:+551142104950">(11) 4210-4950</a><br>
+                    <a href="mailto:biblioteca@unifecaf.com.br">biblioteca@unifecaf.com.br</a>
+                </address>
+            </div>
+        </div>
+
+        <div class="rodape__base">
+            <div class="container">
+                <p>&copy; 2026 Biblioteca Digital UniFECAF. Projeto academico desenvolvido em HTML e CSS.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

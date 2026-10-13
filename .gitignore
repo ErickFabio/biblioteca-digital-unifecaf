@@ -1,0 +1,25 @@
+# ===== Sistema operacional =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Editores / IDE =====
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.idea/
+
+# ===== Node / ferramentas de build (se usar no futuro) =====
+node_modules/
+npm-debug.log*
+
+# ===== Arquivos temporarios =====
+*.log
+*.tmp
+*~
+
+# ===== Previews de validacao (gerados localmente) =====
+preview-*.png
